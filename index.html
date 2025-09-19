@@ -1,40 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Social Links</title>
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      height: 100vh;
-      background: url("snaptik_7489270063334313221_7.jpeg") no-repeat center center/cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      backdrop-filter: blur(4px);
+      background: url("background.jpg") no-repeat center center/cover;
+      background-attachment: fixed;
+      text-align: center;
+      color: white;
     }
 
-    h1 {
-      margin-bottom: 30px;
-      font-size: 2rem;
-      color: #fff;
-      text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
     }
 
     .btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 280px;
-      padding: 15px 20px;
-      margin: 15px 0;
+      width: 90%;
+      max-width: 350px;
+      margin: 15px auto;
+      padding: 15px;
       border-radius: 20px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
       text-decoration: none;
-      color: white;
-      font-size: 1.2rem;
+
+      /* glass effect */
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+
+      /* glow */
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.9);
+    }
+
+    .btn img {
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>My Social Links</h2>
+
+  <a href="https://www.facebook.com/aungkhant.hein.142035" class="btn">
+    <img src="facebook.png" alt="Facebook"> Facebook
+  </a>
+
+  <a href="https://www.tiktok.com/@to_mioka1" class="btn">
+    <img src="tiktok.png" alt="TikTok"> TikTok
+  </a>
+
+  <a href="https://www.instagram.com/to_mioka_12" class="btn">
+    <img src="instagram.png" alt="Instagram"> Instagram
+  </a>
+
+  <h2>Connect with Me</h2>
+
+  <a href="https://t.me/Tommyvicent" class="btn">
+    <img src="telegram.png" alt="Telegram"> Telegram
+  </a>
+
+  <a href="https://www.facebook.com/aungkhant.hein.142035" class="btn">
+    <img src="facebook.png" alt="Facebook"> Facebook
+  </a>
+</body>
+</html>      font-size: 1.2rem;
       font-weight: bold;
       transition: 0.3s;
       /* iOS Glass effect */
