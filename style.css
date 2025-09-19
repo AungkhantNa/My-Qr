@@ -17,17 +17,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 320px;       /* bigger button width */
-  padding: 18px 24px; /* taller buttons */
-  margin: 18px 0;     /* more spacing */
-  border-radius: 25px;
+  width: 320px;         /* make wider */
+  padding: 18px 24px;    /* more padding = taller buttons */
+  margin: 18px 0;        /* more space between buttons */
+  border-radius: 25px;   /* rounder corners, optional */
   text-decoration: none;
   color: white;
-  font-size: 1.4rem;  /* bigger text */
+  font-size: 1.4rem;     /* larger text */
   font-weight: bold;
-  transition: 0.3s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-  /* iOS Glass effect */
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
@@ -36,11 +35,10 @@ body {
 }
 
 .btn img {
-  width: 32px;   /* bigger icons */
+  width: 32px;    /* larger icon size */
   height: 32px;
   margin-right: 12px;
 }
-
 
 /* Remove solid color overrides */
 .facebook,
