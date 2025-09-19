@@ -1,7 +1,8 @@
+/* Global */
 body {
   margin: 0;
   padding: 0;
-  background: url("background.jpg") no-repeat center center;
+  background: url("background.jpg") no-repeat center center fixed;
   background-size: cover;
   font-family: Arial, sans-serif;
   display: flex;
@@ -10,86 +11,54 @@ body {
   min-height: 100vh;
 }
 
+/* Container */
 .container {
   text-align: center;
-  /* optional slight overlay for readability */
-  background: rgba(0, 0, 0, 0.25);
-  padding: 20px 30px;
+  background: rgba(0, 0, 0, 0.35); /* glassy effect */
+  padding: 25px 40px;
   border-radius: 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 25px rgba(0,0,0,0.5);
 }
 
+/* QR Code */
+.qr-code img {
+  width: 180px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+
+/* Buttons */
 .btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin: 12px auto;
   padding: 12px 24px;
-  border-radius: 12px;
+  border-radius: 14px;
   color: white;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
+  width: 220px;
 }
 
 .btn img {
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   margin-right: 10px;
 }
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0.tiktok { background: #000000; }
-.telegram { background: #0088cc; }  align-items: center;
-  justify-content: center;
-  padding: 14px 28px;
-  margin: 12px;
-  border-radius: 16px;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  background: rgba(0, 0, 0, 0.4); /* semi-transparent dark bg */
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(255,255,255,0.6);
 }
 
-.btn img {
-  width: 28px;
-  height: 28px;
-  margin-right: 10px;
-}
-
-/* === Hover Effects with Brand Colors === */
-.btn:hover {
-  transform: scale(1.05);
-}
-
-.facebook:hover {
-  box-shadow: 0 0 20px rgba(59, 89, 152, 0.8);   /* Facebook Blue */
-}
-
-.instagram:hover {
-  box-shadow: 0 0 20px rgba(225, 48, 108, 0.8); /* Instagram Pink */
-}
-
-.tiktok:hover {
-  box-shadow: 0 0 20px rgba(0, 242, 234, 0.8);  /* TikTok Cyan */
-}
-
-.telegram:hover {
-  box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);  /* Telegram Blue */
-}  transition: 0.3s;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.9);
-}
-
-.btn img {
-  width: 28px;
-  height: 28px;
-  margin-right: 10px;
-}
+/* Individual brand colors */
+.facebook { background: #1877f2; }
+.tiktok { background: #000000; }
+.instagram { background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5); }
+.telegram { background: #0088cc; }
