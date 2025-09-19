@@ -1,40 +1,41 @@
-/* === Global === */
 body {
   background: url("background.jpg") no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
-/* === Container === */
 .container {
   text-align: center;
-  background: rgba(0, 0, 0, 0.3); /* optional overlay for readability */
+  background: rgba(0, 0, 0, 0.3); /* transparent glassy */
   padding: 20px 40px;
   border-radius: 20px;
 }
 
-/* === QR Code === */
-.qr-code {
-  margin-bottom: 25px;
-}
-
-.qr-code img {
-  width: 180px;
-  height: 180px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-}
-
-/* === Buttons === */
 .btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,255,255,0.6);
+}
+
+.facebook { background: #1877f2; }
+.instagram { background: linear-gradient(45deg,#feda75,#d62976,#4f5bd5); }
+.tiktok { background: #000000; }
+.telegram { background: #0088cc; }  align-items: center;
   justify-content: center;
   padding: 14px 28px;
   margin: 12px;
