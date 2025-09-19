@@ -1,49 +1,53 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background: url('your-background.jpg') no-repeat center center/cover;
   font-family: Arial, sans-serif;
+  background: url('your-background.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .container {
-  width: 100%;
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .btn {
-  width: 90%;
-  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  max-width: 350px;
+  margin: 12px 0;
   padding: 15px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.1); /* transparent + glass */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+}
+
+.btn img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
 }
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
 }
 
-.btn img {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
+/* Remove solid color overrides */
+.facebook,
+.tiktok,
+.instagram,
+.telegram {
+  background: rgba(255, 255, 255, 0.1); /* Keep glass effect */
 }
