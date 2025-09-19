@@ -1,86 +1,24 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("background.jpg") no-repeat center center fixed;
-  background-size: cover;
   font-family: Arial, sans-serif;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  background: url('background.jpg') no-repeat center center/cover;
 }
 
+/* Glassy container */
 .container {
-  text-align: center;
-  background: rgba(0, 0, 0, 0.35); /* glassy effect */
-  padding: 25px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;   /* bigger box */
+  padding: 45px;  /* more space inside */
   border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 4px 25px rgba(0,0,0,0.5);
-}
-
-.qr-code img {
-  width: 180px;
-  margin: 15px 0;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.4);
-}
-
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 12px auto;
-  padding: 12px 24px;
-  border-radius: 14px;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  transition: 0.3s ease-in-out;
-  width: 220px;
-}
-
-.btn img {
-  width: 26px;
-  height: 26px;
-  margin-right: 10px;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255,255,255,0.6);
-}
-
-.facebook { background: #1877f2; }
-.tiktok { background: #000000; }
-.instagram { background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5); }
-.telegram { background: #0088cc; }  justify-content: center;
-  margin: 12px auto;
-  padding: 12px 24px;
-  border-radius: 14px;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  transition: 0.3s ease-in-out;
-  width: 220px;
-}
-
-.btn img {
-  width: 26px;
-  height: 26px;
-  margin-right: 10px;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255,255,255,0.6);
-}
-
-/* Individual brand colors */
-.facebook { background: #1877f2; }
-.tiktok { background: #000000; }
-.instagram { background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5); }
-.telegram { background: #0088cc; }
+  -webkit
