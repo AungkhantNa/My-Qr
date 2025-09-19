@@ -1,40 +1,79 @@
+/* === Global === */
 body {
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  background: url("background.jpg") no-repeat center center/cover;
-  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* === Container === */
+.container {
   text-align: center;
-  color: white;
+  background: rgba(0, 0, 0, 0.3); /* optional overlay for readability */
+  padding: 20px 40px;
+  border-radius: 20px;
 }
 
-h2 {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+/* === QR Code === */
+.qr-code {
+  margin-bottom: 25px;
 }
 
+.qr-code img {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* === Buttons === */
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  max-width: 350px;
-  margin: 15px auto;
-  padding: 15px;
-  border-radius: 20px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
+  padding: 14px 28px;
+  margin: 12px;
+  border-radius: 16px;
   text-decoration: none;
-
-  /* Glass effect */
-  backdrop-filter: blur(15px);
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-
-  /* Glow */
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent dark bg */
+  border: 1px solid rgba(255, 255, 255, 0.15);
   transition: 0.3s;
+}
+
+.btn img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+/* === Hover Effects with Brand Colors === */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.facebook:hover {
+  box-shadow: 0 0 20px rgba(59, 89, 152, 0.8);   /* Facebook Blue */
+}
+
+.instagram:hover {
+  box-shadow: 0 0 20px rgba(225, 48, 108, 0.8); /* Instagram Pink */
+}
+
+.tiktok:hover {
+  box-shadow: 0 0 20px rgba(0, 242, 234, 0.8);  /* TikTok Cyan */
+}
+
+.telegram:hover {
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);  /* Telegram Blue */
+}  transition: 0.3s;
 }
 
 .btn:hover {
