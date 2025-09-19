@@ -3,22 +3,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 /* Background */
 body {
   background: url('background.jpg') no-repeat center center fixed;
   background-size: cover;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 /* Container */
 .container {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   padding: 30px 20px;
@@ -29,45 +29,35 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Title */
-.container h2 {
-  color: #fff;
-  margin-bottom: 20px;
-  font-size: 22px;
+/* QR Code image */
+.qr-code {
+  width: 160px;
+  margin: 0 auto 20px auto;
+  display: block;
+  border-radius: 10px;
 }
 
 /* Buttons */
 .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 12px 0;
+  display: block;
+  width: 100%;
   padding: 12px;
+  margin: 10px 0;
   border: none;
-  border-radius: 15px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
+  border-radius: 12px;
   text-decoration: none;
-  transition: 0.3s ease;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(8px);
-}
-
-.btn i {
-  margin-right: 10px;
-  font-size: 22px;
-}
-
-/* Colors */
-.telegram { background: #0088cc; }
-.facebook { background: #1877f2; }
-.tiktok { background: #000; }
-.instagram {
-  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .btn:hover {
   transform: scale(1.05);
-  opacity: 0.9;
+  box-shadow: 0 0 15px rgba(255,255,255,0.5);
 }
+
+.telegram { background: #0088cc; }
+.facebook { background: #1877f2; }
+.tiktok { background: #000000; }
+.instagram { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); }
