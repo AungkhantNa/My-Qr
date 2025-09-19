@@ -1,15 +1,20 @@
 body {
-  background: url("background.jpg") no-repeat center center fixed;
-  background-size: cover;
   margin: 0;
   padding: 0;
+  background: url("background.jpg") no-repeat center center;
+  background-size: cover;
   font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container {
   text-align: center;
-  background: rgba(0, 0, 0, 0.3); /* transparent glassy */
-  padding: 20px 40px;
+  /* optional slight overlay for readability */
+  background: rgba(0, 0, 0, 0.25);
+  padding: 20px 30px;
   border-radius: 20px;
 }
 
@@ -18,23 +23,24 @@ body {
   align-items: center;
   justify-content: center;
   margin: 10px;
-  padding: 12px 20px;
+  padding: 12px 24px;
   border-radius: 12px;
   color: white;
+  text-decoration: none;
   font-size: 18px;
   font-weight: bold;
-  text-decoration: none;
   transition: 0.3s;
+}
+
+.btn img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
 }
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255,255,255,0.6);
-}
-
-.facebook { background: #1877f2; }
-.instagram { background: linear-gradient(45deg,#feda75,#d62976,#4f5bd5); }
-.tiktok { background: #000000; }
+  box-shadow: 0 0.tiktok { background: #000000; }
 .telegram { background: #0088cc; }  align-items: center;
   justify-content: center;
   padding: 14px 28px;
