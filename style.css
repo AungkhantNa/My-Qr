@@ -21,4 +21,51 @@ body {
   background: rgba(255, 255, 255, 0.08);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(12px);
-  -webkit
+  -webkit-backdrop-filter: blur(12px);
+  text-align: center;
+}
+
+.container h2 {
+  color: white;
+  font-size: 2em;     /* bigger title */
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 16px;   /* bigger buttons */
+  margin: 18px 0;  /* more gap */
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2em;   /* larger text */
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+/* Hover effect */
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Social button colors */
+.telegram {
+  background: #0088cc;
+}
+
+.facebook {
+  background: #1877f2;
+}
+
+.tiktok {
+  background: #000000;
+}
+
+.instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
